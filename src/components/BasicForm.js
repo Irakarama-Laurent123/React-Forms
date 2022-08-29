@@ -41,12 +41,13 @@ const BasicForm = (props) => {
   const formSubmissionHandler = (event) => {
     event.preventDefault();
 
-    if (!enteredFirstNameIsValid && enteredLastNameIsValid) {
+    if (!formIsValid) {
       return;
     }
 
     console.log(enteredFirstName);
     console.log(enteredLastName);
+    console.log(enteredEmail);
 
     // nameInputRef.current.value = ''; => NOT IDEAL, DON'T MANIPULATE THE DOM
     resetFirstNameInput();
