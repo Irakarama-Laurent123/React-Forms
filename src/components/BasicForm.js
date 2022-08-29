@@ -32,7 +32,7 @@ const BasicForm = (props) => {
 
   if (
     enteredFirstNameIsValid &&
-    enteredFirstNameIsValid &&
+    enteredLastNameIsValid &&
     enteredEmailIsValid
   ) {
     formIsValid = true;
